@@ -31,8 +31,11 @@ Route::get('/shop', ShopComponent::class);
 Route::get('/cart', CartComponent::class);
 
 
-// Route::get('checkout', checkoutComponent::class);
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::get('checkout', checkoutComponent::class);
+
+Route::get('/product/(slug', DetailsComponent::class_uses)->name('product.details');
+
+ // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
 // })->name('dashboard');
 
