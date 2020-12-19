@@ -70,7 +70,7 @@
                             </ul>
                         </div>
                         <div class="wrap-social">
-                            <a class="link-socail" href="#"><img src="assets/images/social-list.png" alt=""></a>
+                            <a class="link-socail" href="#"><img src="{{ asset('assets/images/social-list.png') }}" alt=""></a>
                         </div>
                         <div class="wrap-price"><span class="product-price">$250.00</span></div>
                         <div class="stock-info in-stock">
@@ -129,7 +129,7 @@
                                         <ol class="commentlist">
                                             <li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="li-comment-20">
                                                 <div id="comment-20" class="comment_container"> 
-                                                    <img alt="" src="assets/images/author-avata.jpg" height="80" width="80">
+                                                    <img alt="" src="{{ asset('assets/images/author-avata.jpg') }}" height="80" width="80">
                                                     <div class="comment-text">
                                                         <div class="star-rating">
                                                             <span class="width-80-percent">Rated <strong class="rating">5</strong> out of 5</span>
