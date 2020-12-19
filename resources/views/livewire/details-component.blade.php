@@ -18,35 +18,35 @@
                             <ul class="slides">
 
                             <li data-thumb="{{ asset('assets/images/products/digital_18.jpg')}}">
-                                <img src="{{ asset('assets/images/products/digital_18.jpg" alt="product thumbnail')}}" />
+                                <img src="{{ asset('assets/images/products/digital_18.jpg') }} " alt="product thumbnail" />
                             </li>
 
-                            <li data-thumb="assets/images/products/digital_17.jpg">
-                                <img src="assets/images/products/digital_17.jpg" alt="product thumbnail" />
+                            <li data-thumb=" {{ asset('assets/images/products/digital_17.jpg') }}">
+                                <img src="{{ asset('assets/images/products/digital_17.jpg') }}" alt="product thumbnail" />
                             </li>
 
-                            <li data-thumb="assets/images/products/digital_15.jpg">
-                                <img src="assets/images/products/digital_15.jpg" alt="product thumbnail" />
+                            <li data-thumb="{{ asset('assets/images/products/digital_15.jpg') }} ">
+                                <img src="{{ asset('assets/images/products/digital_15.jpg') }}" alt="product thumbnail" />
                             </li>
 
-                            <li data-thumb="assets/images/products/digital_02.jpg">
-                                <img src="assets/images/products/digital_02.jpg" alt="product thumbnail" />
+                            <li data-thumb="{{ asset('assets/images/products/digital_02.jpg') }}">
+                                <img src="{{ asset('assets/images/products/digital_02.jpg') }}" alt="product thumbnail" />
                             </li>
 
                             <li data-thumb="assets/images/products/digital_08.jpg">
-                                <img src="assets/images/products/digital_08.jpg" alt="product thumbnail" />
+                                <img src="{{ asset('assets/images/products/digital_08.jpg') }}" alt="product thumbnail" />
                             </li>
 
-                            <li data-thumb="assets/images/products/digital_10.jpg">
-                                <img src="assets/images/products/digital_10.jpg" alt="product thumbnail" />
+                            <li data-thumb="{{ asset('assets/images/products/digital_10.jpg') }}">
+                                <img src="{{ asset('assets/images/products/digital_10.jpg') }}" alt="product thumbnail" />
                             </li>
 
-                            <li data-thumb="assets/images/products/digital_12.jpg">
-                                <img src="assets/images/products/digital_12.jpg" alt="product thumbnail" />
+                            <li data-thumb="{{ asset('assets/images/products/digital_12.jpg') }}">
+                                <img src="{{ asset('assets/images/products/digital_12.jpg') }}" alt="product thumbnail" />
                             </li>
 
-                            <li data-thumb="assets/images/products/digital_14.jpg">
-                                <img src="assets/images/products/digital_14.jpg" alt="product thumbnail" />
+                            <li data-thumb="{{ asset('assets/images/products/digital_14.jpg') }}">
+                                <img src="{{ asset('assets/images/products/digital_14.jpg') }}" alt="product thumbnail" />
                             </li>
 
                             </ul>
