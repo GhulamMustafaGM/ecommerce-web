@@ -16,38 +16,9 @@
                     <div class="detail-media">
                         <div class="product-gallery">
                             <ul class="slides">
-
-                            <li data-thumb="{{ asset('assets/images/products/digital_18.jpg')}}">
-                                <img src="{{ asset('assets/images/products/digital_18.jpg') }} " alt="product thumbnail" />
-                            </li>
-
-                            <li data-thumb=" {{ asset('assets/images/products/digital_17.jpg') }}">
-                                <img src="{{ asset('assets/images/products/digital_17.jpg') }}" alt="product thumbnail" />
-                            </li>
-
-                            <li data-thumb="{{ asset('assets/images/products/digital_15.jpg') }} ">
-                                <img src="{{ asset('assets/images/products/digital_15.jpg') }}" alt="product thumbnail" />
-                            </li>
-
-                            <li data-thumb="{{ asset('assets/images/products/digital_2.jpg') }}">
-                                <img src="{{ asset('assets/images/products/digital_2.jpg') }}" alt="product thumbnail" />
-                            </li>
-
-                            <li data-thumb="assets/images/products/digital_08.jpg">
-                                <img src="{{ asset('assets/images/products/digital_8.jpg') }}" alt="product thumbnail" />
-                            </li>
-
-                            <li data-thumb="{{ asset('assets/images/products/digital_10.jpg') }}">
-                                <img src="{{ asset('assets/images/products/digital_10.jpg') }}" alt="product thumbnail" />
-                            </li>
-
-                            <li data-thumb="{{ asset('assets/images/products/digital_12.jpg') }}">
-                                <img src="{{ asset('assets/images/products/digital_12.jpg') }}" alt="product thumbnail" />
-                            </li>
-
-                            <li data-thumb="{{ asset('assets/images/products/digital_14.jpg') }}">
-                                <img src="{{ asset('assets/images/products/digital_14.jpg') }}" alt="product thumbnail" />
-                            </li>
+                                <li data-thumb="{{ asset('assets/images/products')}}/{{ $product->image }} ">
+                                    <img src="{{ asset('assets/images/products') }}/{{ $product->image }} " alt="{{ $product->name }}" />
+                                </li>
 
                             </ul>
                         </div>
@@ -70,7 +41,7 @@
                         </div>
                         <div class="wrap-price"><span class="product-price">${{ $product->regular_price }}</span></div>
                         <div class="stock-info in-stock">
-                            <p class="availability">Availability: <b>In Stock</b></p>
+                            <p class="availability">Availability: <b>{{ $product->stock_status }}</b></p>
                         </div>
                         <div class="quantity">
                             <span>Quantity:</span>
@@ -97,9 +68,7 @@
                         </div>
                         <div class="tab-contents">
                             <div class="tab-content-item active" id="description">
-                                <p>Lorem ipsum dolor sit amet, an munere tibique consequat mel, congue albucius no qui, a t everti meliore erroribus sea. ro cum. Sea ne accusata voluptatibus. Ne cum falli dolor voluptua, duo ei sonet choro facilisis, labores officiis torquatos cum ei.</p>
-                                <p>Cum altera mandamus in, mea verear disputationi et. Vel regione discere ut, legere expetenda ut eos. In nam nibh invenire similique. Atqui mollis ea his, ius graecis accommodare te. No eam tota nostrum eque. Est cu nibh clita. Sed an nominavi, et stituto, duo id rebum lucilius. Te eam iisque deseruisse, ipsum euismod his at. Eu putent habemus voluptua sit, sit cu rationibus scripserit, modus taria . </p>
-                                <p>experian soleat maluisset per. Has eu idque similique, et blandit scriptorem tatibus mea. Vis quaeque ocurreret ea.cu bus  scripserit, modus voluptaria ex per.</p>
+                                {{ $product->description }}
                             </div>
                             <div class="tab-content-item " id="add_infomation">
                                 <table class="shop_attributes">
@@ -313,7 +282,7 @@
                             <div class="product product-style-2 equal-elem ">
                                 <div class="product-thumnail">
                                     <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-                                        <figure><img src="{{ asset('assets/images/products/digital_04.jpg') }}" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        <figure><img src="{{ asset('assets/images/products/digital_4.jpg') }}" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
                                     </a>
                                     <div class="group-flash">
                                         <span class="flash-item new-label">new</span>
@@ -401,7 +370,7 @@
                             <div class="product product-style-2 equal-elem ">
                                 <div class="product-thumnail">
                                     <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-                                        <figure><img src="{{ asset('assets/images/products/digital_03.jpg') }}" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        <figure><img src="{{ asset('assets/images/products/digital_3.jpg') }}" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
                                     </a>
                                     <div class="group-flash">
                                         <span class="flash-item sale-label">sale</span>

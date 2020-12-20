@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use App\Models\Product;
 
 class DetailsComponent extends Component
 {
@@ -14,7 +15,7 @@ class DetailsComponent extends Component
     }
     public function render()
     {
-        $proudct = Product::where('slug', $this->slug)->first();
-        return view('livewire.details-component', ['product' =>$product])->layout('layouts.base');
+        $product = Product::where('slug', $this->slug)->first();
+        return view('livewire.details-component', ['product'=>$product])->layout('layouts.base');
     }
 }
